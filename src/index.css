@@ -16,17 +16,8 @@ h4, h5, h6 {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Ubuntu", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-code {
   font-family: "Ubuntu", sans-serif;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

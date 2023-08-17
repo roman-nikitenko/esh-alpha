@@ -22,16 +22,6 @@ h4, h5, h6 {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Ubuntu',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $main-bg-color;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-code {
   font-family: 'Ubuntu', sans-serif;
+  background-color: $main-bg-color;
 }
