@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/roman-nikitenko/esh-alpha/static/css/main.fcce131a.css",
-    "main.js": "/roman-nikitenko/esh-alpha/static/js/main.56d9f5d9.js",
+    "main.css": "/roman-nikitenko/esh-alpha/static/css/main.25e1fb53.css",
+    "main.js": "/roman-nikitenko/esh-alpha/static/js/main.da3647bf.js",
     "static/media/logo.svg": "/roman-nikitenko/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
     "index.html": "/roman-nikitenko/esh-alpha/index.html",
-    "main.fcce131a.css.map": "/roman-nikitenko/esh-alpha/static/css/main.fcce131a.css.map",
-    "main.56d9f5d9.js.map": "/roman-nikitenko/esh-alpha/static/js/main.56d9f5d9.js.map"
+    "static/media/icon-burger.svg": "/roman-nikitenko/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
+    "main.25e1fb53.css.map": "/roman-nikitenko/esh-alpha/static/css/main.25e1fb53.css.map",
+    "main.da3647bf.js.map": "/roman-nikitenko/esh-alpha/static/js/main.da3647bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcce131a.css",
-    "static/js/main.56d9f5d9.js"
+    "static/css/main.25e1fb53.css",
+    "static/js/main.da3647bf.js"
   ]
 }
