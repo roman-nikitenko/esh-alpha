@@ -1,3 +1,9 @@
+$main-bg-color: #fff;
+$main-bg-block: #051424;
+$brand-color1: #54007C;
+$brand-color2: #AD57C5;
+$brand-color3: #D03AFA;
+
 h1 {
   font-size: 3.375rem;
 }
@@ -16,17 +22,16 @@ h4, h5, h6 {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Ubuntu", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Ubuntu',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fff;
+  background-color: $main-bg-color;
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
 code {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
-
-/*# sourceMappingURL=index.css.map */
