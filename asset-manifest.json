@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/roman-nikitenko/esh-alpha/static/css/main.fcce131a.css",
+    "main.js": "/roman-nikitenko/esh-alpha/static/js/main.56d9f5d9.js",
+    "static/media/logo.svg": "/roman-nikitenko/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
+    "index.html": "/roman-nikitenko/esh-alpha/index.html",
+    "main.fcce131a.css.map": "/roman-nikitenko/esh-alpha/static/css/main.fcce131a.css.map",
+    "main.56d9f5d9.js.map": "/roman-nikitenko/esh-alpha/static/js/main.56d9f5d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcce131a.css",
+    "static/js/main.56d9f5d9.js"
+  ]
+}
