@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/roman-nikitenko/esh-alpha/static/css/main.25e1fb53.css",
-    "main.js": "/roman-nikitenko/esh-alpha/static/js/main.da3647bf.js",
-    "static/media/logo.svg": "/roman-nikitenko/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
-    "index.html": "/roman-nikitenko/esh-alpha/index.html",
-    "static/media/icon-burger.svg": "/roman-nikitenko/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
-    "main.25e1fb53.css.map": "/roman-nikitenko/esh-alpha/static/css/main.25e1fb53.css.map",
-    "main.da3647bf.js.map": "/roman-nikitenko/esh-alpha/static/js/main.da3647bf.js.map"
+    "main.css": "/esh-alpha/static/css/main.ef5f0fe6.css",
+    "main.js": "/esh-alpha/static/js/main.bbd0d06f.js",
+    "static/media/logo.svg": "/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
+    "index.html": "/esh-alpha/index.html",
+    "static/media/icon-burger.svg": "/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
+    "main.ef5f0fe6.css.map": "/esh-alpha/static/css/main.ef5f0fe6.css.map",
+    "main.bbd0d06f.js.map": "/esh-alpha/static/js/main.bbd0d06f.js.map"
   },
   "entrypoints": [
-    "static/css/main.25e1fb53.css",
-    "static/js/main.da3647bf.js"
+    "static/css/main.ef5f0fe6.css",
+    "static/js/main.bbd0d06f.js"
   ]
 }
