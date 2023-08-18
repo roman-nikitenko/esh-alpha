@@ -15,13 +15,21 @@ function App() {
         </div>
 
         <div className="header__bottom">
-          <img className="header__welcome" src={welcome} alt="Welcome to ESH Aplha"/>
-          <span className="header__text">
+          <div className="header__content">
+            <img className="header__welcome" src={welcome} alt="Welcome to ESH Aplha"/>
+            <span className="header__text">
             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.
             Molestie metus morbi purus amet malesuada proin amet facilisis.
           </span>
-          <button type="submit">Contact us</button>
+            <button className="button button--header" type="submit">Contact us</button>
+          </div>
+
+          <div className="header__content-image">
+            <div className="header__image"></div>
+          </div>
         </div>
+
+
       </header>
 
       <main>

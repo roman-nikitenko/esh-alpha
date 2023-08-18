@@ -4,7 +4,6 @@
   background-color: #051424;
   box-sizing: border-box;
   background-size: cover;
-  height: 100vh;
 }
 
 .logo {
@@ -13,12 +12,42 @@
 }
 
 .header__top {
+  padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
 }
 
 .header__bottom {
-  display: block;
+  padding-bottom: 29px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__welcome {
+  margin-bottom: 24px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  padding: 12px 32px;
+}
+
+.button--header {
+  background-color: #AD57C5;
+}
+
+.header__text {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 36px;
 }
 
 .icon {
@@ -27,8 +56,29 @@
   width: 28px;
 }
 
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.header__content-image {
+  box-shadow: 29px 29px #AD57C5;
+  display: block;
+  width: 337px;
+  height: 386px;
+}
+
 .icon--menu {
   background-image: url(./img/icon-burger.svg);
+}
+
+.header__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-image: url(./img/image-header-full.jpeg);
 }
 
 /*# sourceMappingURL=App.css.map */
