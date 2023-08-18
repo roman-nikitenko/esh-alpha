@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/esh-alpha/static/css/main.ef5f0fe6.css",
-    "main.js": "/esh-alpha/static/js/main.bbd0d06f.js",
+    "main.css": "/esh-alpha/static/css/main.65e403a8.css",
+    "main.js": "/esh-alpha/static/js/main.f2eb790c.js",
+    "static/media/image-header-full.jpeg": "/esh-alpha/static/media/image-header-full.b1ad578f1431128112f4.jpeg",
     "static/media/logo.svg": "/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
     "index.html": "/esh-alpha/index.html",
     "static/media/icon-burger.svg": "/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
-    "main.ef5f0fe6.css.map": "/esh-alpha/static/css/main.ef5f0fe6.css.map",
-    "main.bbd0d06f.js.map": "/esh-alpha/static/js/main.bbd0d06f.js.map"
+    "main.65e403a8.css.map": "/esh-alpha/static/css/main.65e403a8.css.map",
+    "main.f2eb790c.js.map": "/esh-alpha/static/js/main.f2eb790c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef5f0fe6.css",
-    "static/js/main.bbd0d06f.js"
+    "static/css/main.65e403a8.css",
+    "static/js/main.f2eb790c.js"
   ]
 }
