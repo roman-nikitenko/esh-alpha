@@ -15,6 +15,7 @@
   padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__bottom {
@@ -54,6 +55,9 @@
   display: block;
   height: 28px;
   width: 28px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .header__content {
@@ -73,6 +77,10 @@
   background-image: url(./img/icon-burger.svg);
 }
 
+.icon--menu--close {
+  background-image: url(./img/close-menu-burger.png);
+}
+
 .header__image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -80,3 +88,8 @@
   background-position: center;
   background-image: url(./img/image-header-full.jpeg);
 }
+
+
+
+
+

@@ -1,8 +1,28 @@
 import './App.scss';
 import logo from './img/logo.svg';
 import welcome from './img/welcome.png'
+import { Menu } from "./components/menu-mobile/Menu";
+import { useEffect, useRef, useState } from "react";
+import classNames from "classnames";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const menuRef = useRef();
+  const dropRef = useRef();
+
+  useEffect(() => {
+    let handler = (e) => {
+      console.log(e.target === menuRef.current || e.target === dropRef)
+    }
+
+    document.addEventListener('mousedown', handler);
+
+    return () => {
+      document.addEventListener('mousedown', handler);
+    }
+  });
+
   return (
     <>
       <header className="header">
@@ -11,7 +31,17 @@ function App() {
             <img className="logo" src={logo} alt="logo"/>
           </a>
 
-          <a href="#" className="icon icon--menu"></a>
+          <button
+            ref={menuRef}
+            type="button"
+            className={classNames('icon', 'icon--menu', {
+              'icon--menu--close': menuOpen,
+            })}
+            onClick={() => {
+              setMenuOpen(current => !current);
+            }}
+          >
+          </button>
         </div>
 
         <div className="header__bottom">
@@ -28,9 +58,9 @@ function App() {
             <div className="header__image"></div>
           </div>
         </div>
-
-
       </header>
+
+      {menuOpen && <Menu dropRef={dropRef} />}
 
       <main>
         <section>
