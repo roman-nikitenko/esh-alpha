@@ -1,96 +1,100 @@
+@import "./styles/utils/mixins";
+@import "./styles/utils/variables";
+
 .header {
-  color: white;
-  padding: 12px 12px 48px;
-  background-color: #051424;
+  color: $main-bg-color;
+  padding: 48px 12px 77px;
+  background-color: $main-bg-block;
   box-sizing: border-box;
   background-size: cover;
-}
 
-.logo {
-  width: 34.76px;
-  height: 28px;
-}
+  @include onDesktop {
+    padding: 24px 136px 96px;
+  }
 
-.header__top {
-  padding-bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  &__bottom {
+    padding-bottom: 29px;
+    display: flex;
+    flex-wrap: wrap;
 
-.header__bottom {
-  padding-bottom: 29px;
-  display: flex;
-  flex-wrap: wrap;
-}
+    @include onDesktop {
+      flex-wrap: nowrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+  }
 
-.header__welcome {
-  margin-bottom: 24px;
+  &__welcome {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: $main-bg-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+
+    margin-bottom: 36px;
+
+    @include onDesktop {
+      margin-bottom: 48px;
+      width: 494px;
+    }
+  }
+
+  &__content-image {
+    box-shadow: 29px 29px $brand-color2;
+    display: block;
+    width: 337px;
+    height: 386px;
+
+    @include onDesktop {
+      width: 420px;
+      height: 480px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+
+    @include onDesktop {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-image: url(./img/image-header-full.jpeg);
+  }
 }
 
 .button {
   cursor: pointer;
   font-size: 20px;
-  color: #ffffff;
+  color: $main-bg-color;
   font-weight: 700;
   border: none;
   padding: 16px 32px;
 }
 
 .button--header {
-  background-color: #AD57C5;
-}
-
-.header__text {
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 36px;
-}
-
-.icon {
-  display: block;
-  height: 28px;
-  width: 28px;
-  border: none;
-  background-color: inherit;
-  cursor: pointer;
-}
-
-.header__content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 48px;
-}
-
-.header__content-image {
-  box-shadow: 29px 29px #AD57C5;
-  display: block;
-  width: 337px;
-  height: 386px;
-}
-
-.header__image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: center;
-  background-image: url(./img/image-header-full.jpeg);
-}
-
-.icon--menu {
-  background-image: url(./img/icon-burger.svg);
-}
-
-.icon--menu--close {
-  background-image: url(./img/close-menu-burger.png);
+  background-color: $brand-color2;
 }
 
 .content {
   padding: 64px 12px;
+}
+
+.content--last {
+  padding: 64px 12px 0;
 }
 
 .about__images {
@@ -103,7 +107,7 @@
 }
 
 .img2 {
-  box-shadow: -20px 20px #AD57C5;
+  box-shadow: -20px 20px $brand-color2;
   top: 151px;
   left: 170px;
   position: absolute;
@@ -120,7 +124,7 @@
 }
 
 .button--color_about {
-  background-color: #54007C;
+  background-color: $brand-color1;
 }
 
 .service__logo {
@@ -132,6 +136,61 @@
   flex-direction: column;
   gap: 32px;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: $main-bg-block;
+  padding: 48px 12px;
+}
+
+.footer__title {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: $main-bg-color;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: $main-bg-color;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 4px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link__service__footer {
+  color: $main-bg-color;
+}
+
+.sign {
+  color: $main-bg-color;
+  margin: 0 auto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+
+
 
 
 

@@ -1,0 +1,71 @@
+@import "../../styles/utils/mixins";
+@import "../../styles/utils/variables";
+
+.main-menu {
+  background-color: #051424;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include onDesktop {
+    padding: 16px 136px;
+  }
+
+  &__logo {
+    width: 34.76px;
+    height: 28px;
+
+    @include onDesktop {
+      width: 47px;
+      height: 38px;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  height: 28px;
+  width: 28px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @include onDesktop {
+    display: none;
+  }
+
+  &__menu {
+    background-image: url(./images/icon-burger.svg);
+  }
+
+  &__menu--close {
+    background-image: url(./images/close-menu-burger.png);
+  }
+}
+
+.nav {
+  display: none;
+  flex-direction: row;
+  gap: 36px;
+
+  @include onDesktop {
+    display: flex;
+  }
+
+  &__link {
+    color: $main-bg-color;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+    &:hover {
+      border-bottom: 1px solid $main-bg-color;
+    }
+  }
+}
+
+
+
+
