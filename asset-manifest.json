@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/esh-alpha/static/css/main.dfc1ab82.css",
-    "main.js": "/esh-alpha/static/js/main.0278b3ef.js",
+    "main.css": "/esh-alpha/static/css/main.6e653ad4.css",
+    "main.js": "/esh-alpha/static/js/main.34245641.js",
     "static/media/image-header-full.jpeg": "/esh-alpha/static/media/image-header-full.b1ad578f1431128112f4.jpeg",
     "static/media/image__about1.png": "/esh-alpha/static/media/image__about1.4d5016c67e2f8d9baf58.png",
     "static/media/image__about2.png": "/esh-alpha/static/media/image__about2.86614c95b0b0f0ec61e5.png",
+    "static/media/welcome.svg": "/esh-alpha/static/media/welcome.6c3fbded9f06a47fd8b8beecf5e1d8ef.svg",
     "static/media/footer__logo.svg": "/esh-alpha/static/media/footer__logo.35640dc87c49f4d365a3685f6799e9a2.svg",
     "static/media/logo.svg": "/esh-alpha/static/media/logo.83b4217815f0cf57591280031f372b05.svg",
     "static/media/about-ESH-alpha2.svg": "/esh-alpha/static/media/about-ESH-alpha2.792827631fb82d2ba2ec32761e3e6217.svg",
@@ -18,11 +19,11 @@
     "static/media/email.svg": "/esh-alpha/static/media/email.2fb75e24f7577f07e2fbf2f6eb30be49.svg",
     "static/media/assessment.svg": "/esh-alpha/static/media/assessment.6efc7aebe28b6ba0ef3024d96816b377.svg",
     "static/media/icon-burger.svg": "/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
-    "main.dfc1ab82.css.map": "/esh-alpha/static/css/main.dfc1ab82.css.map",
-    "main.0278b3ef.js.map": "/esh-alpha/static/js/main.0278b3ef.js.map"
+    "main.6e653ad4.css.map": "/esh-alpha/static/css/main.6e653ad4.css.map",
+    "main.34245641.js.map": "/esh-alpha/static/js/main.34245641.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc1ab82.css",
-    "static/js/main.0278b3ef.js"
+    "static/css/main.6e653ad4.css",
+    "static/js/main.34245641.js"
   ]
 }
