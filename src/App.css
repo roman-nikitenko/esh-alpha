@@ -1,6 +1,6 @@
 .header {
   color: #fff;
-  padding: 48px 12px 77px;
+  padding: 12px 12px 48px;
   background-color: #051424;
   box-sizing: border-box;
   background-size: cover;
@@ -18,8 +18,9 @@
 @media (min-width: 1440px) {
   .header__bottom {
     flex-wrap: nowrap;
-    gap: 24px;
+    padding-bottom: 0;
     justify-content: space-between;
+    align-items: center;
   }
 }
 .header__welcome {
@@ -36,8 +37,19 @@
 }
 @media (min-width: 1440px) {
   .header__text {
-    margin-bottom: 48px;
     width: 494px;
+    margin-bottom: 48px;
+  }
+}
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+@media (min-width: 1440px) {
+  .header__content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .header__content-image {
@@ -52,17 +64,6 @@
     height: 480px;
   }
 }
-.header__content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 48px;
-}
-@media (min-width: 1440px) {
-  .header__content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 .header__image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,13 +72,21 @@
   background-image: url(./img/image-header-full.jpeg);
 }
 
+.logo {
+  width: 34.76px;
+  height: 28px;
+}
+
 .button {
   cursor: pointer;
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
   border: none;
   padding: 16px 32px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .button--header {
@@ -102,7 +111,7 @@
 }
 
 .img2 {
-  box-shadow: -20px 20px #AD57C5;
+  box-shadow: -20px 20px #D03AFA;
   top: 151px;
   left: 170px;
   position: absolute;
