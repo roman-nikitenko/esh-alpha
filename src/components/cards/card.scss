@@ -1,12 +1,28 @@
+@import "../../styles/utils/mixins";
+@import "../../styles/utils/variables";
+
 .card {
-  color: #FFF;
+  cursor: pointer;
+  max-width: 360px;
+  color: $main-bg-color;
   gap: 16px;
   display: flex;
   flex-direction: row;
   padding: 32px 24px 48px;
-  background-color: #051424;
-  box-shadow: 14px 15px #AD57C5;
+  background-color: $main-bg-block;
+  box-shadow: 14px 15px $brand-color2;
   margin-right: 15px;
+
+  transition: all 0.4s ease;
+
+  @include onDesktop {
+    margin-right: 0;
+    margin-top: 48px;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .card__content {
