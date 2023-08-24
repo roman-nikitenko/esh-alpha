@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import './main-menu.scss';
 import logo from "../../img/logo.svg";
 import classNames from "classnames";
 
-export const MainMenu = ({ setMenuOpen, menuOpen }) => {
-
-
+export const MainMenu = ( { menuOpen, setMenuOpen } ) => {
   useEffect(() => {
 
   });
@@ -13,9 +12,9 @@ export const MainMenu = ({ setMenuOpen, menuOpen }) => {
   return (
     <>
       <div className="main-menu">
-        <a href="#">
+        <Link to="/">
           <img className="main-menu__logo" src={logo} alt="logo"/>
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -30,13 +29,15 @@ export const MainMenu = ({ setMenuOpen, menuOpen }) => {
 
         <ul className="nav">
           <li className="nav__item">
-            <a href="" className="nav__link">Home</a>
+            <Link to="/" className="nav__link">Home</Link>
           </li>
           <li className="nav__item">
-            <a href="" className="nav__link">Service</a>
+            <Link to="/service" className="nav__link">Service</Link>
           </li>
           <li className="nav__item">
-            <a href="" className="nav__link">Contacts</a>
+            <Link to="/contacts" className="nav__link">
+              Contacts
+            </Link>
           </li>
         </ul>
       </div>
