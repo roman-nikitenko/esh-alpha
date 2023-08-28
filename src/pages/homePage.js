@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { MainMenu } from "../components/main-menu/Main-menu";
+import React from 'react';
 import welcome from "../img/welcome.svg";
-import { Menu } from "../components/menu-mobile/Menu";
 import image__about1 from "../img/image__about1.png";
 import image__about2 from "../img/image__about2.png";
 import about__logo from "../img/about-ESH-alpha2.svg";
@@ -10,24 +8,15 @@ import { Card } from "../components/cards/Card";
 import settings from "../components/cards/img/settings.svg";
 import account from "../components/cards/img/account.svg";
 import assessment from "../components/cards/img/assessment.svg";
-import footer__logo from "../img/footer__logo.svg";
-import footer__title from "../img/footer__title.svg";
-import call from "../img/phone.svg";
-import location from "../img/location.svg";
-import email from "../img/email.svg";
-import { Footer } from "../components/footer/Footer";
 
 export const HomePage = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-
   return (
     <>
       {/*<MainMenu*/}
       {/*  setMenuOpen={setMenuOpen}*/}
       {/*  menuOpen={menuOpen}*/}
       {/*/>*/}
-      <header className="header" id="home">
+      <header className="header header__main-page" id="home">
         <div className="header__bottom">
           <div className="header__content">
             <img className="header__welcome" src={welcome} alt="Welcome to ESH Aplha"/>
@@ -43,8 +32,6 @@ export const HomePage = () => {
           </div>
         </div>
       </header>
-
-      {/*{menuOpen && <Menu />}*/}
 
       <main>
         <section className="content about" id="about">

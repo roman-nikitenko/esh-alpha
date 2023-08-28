@@ -1,0 +1,35 @@
+.header__service {
+  padding: 48px 24px 64px;
+}
+.header__service__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.header__service__text {
+  text-align: center;
+  color: #fff;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  word-break: break-word;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px 12px;
+}
+@media (min-width: 1440px) {
+  .main {
+    padding: 80px 136px;
+    gap: 176px;
+  }
+}
+
+/*# sourceMappingURL=service.css.map */

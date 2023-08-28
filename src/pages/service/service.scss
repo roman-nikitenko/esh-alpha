@@ -1,0 +1,38 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.header__service {
+  padding: 48px 24px 64px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    text-align: center;
+    color: $main-bg-color;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+
+    word-break: break-word;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px 12px;
+
+  @include onDesktop {
+    padding: 80px 136px;
+    gap: 176px;
+  }
+}

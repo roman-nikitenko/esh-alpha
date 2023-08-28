@@ -1,6 +1,6 @@
 import './App.scss';
 import { Route, Routes } from "react-router-dom";
-import { ServicePage } from "./pages/servicePage";
+import { ServicePage } from "./pages/service/servicePage";
 import { ContactsPage } from "./pages/contactsPage";
 import { HomePage } from "./pages/homePage";
 import { MainMenu } from "./components/main-menu/Main-menu";
