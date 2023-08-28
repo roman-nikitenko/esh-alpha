@@ -8,6 +8,7 @@ import { Card } from "../components/cards/Card";
 import settings from "../components/cards/img/settings.svg";
 import account from "../components/cards/img/account.svg";
 import assessment from "../components/cards/img/assessment.svg";
+import { Link } from "react-router-dom";
 
 export const HomePage = () => {
   return (
@@ -24,7 +25,13 @@ export const HomePage = () => {
             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.
             Molestie metus morbi purus amet malesuada proin amet facilisis.
           </span>
-            <button className="button button--header" type="submit">Contact us</button>
+            <Link
+              to="/contacts"
+              className="button button--header"
+              type="button"
+            >
+              Contact us
+            </Link>
           </div>
 
           <div className="header__content-image">

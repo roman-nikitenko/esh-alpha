@@ -1,13 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom'
 import './main-menu.scss';
 import logo from "../../img/logo.svg";
 import classNames from "classnames";
 
-export const MainMenu = ( { menuOpen, setMenuOpen } ) => {
+export const MainMenu = ( { menuOpen, setMenuOpen, refMenu } ) => {
+  const refButton = useRef();
+
+  const handler = (e) => {
+    if (e.target === refMenu.current) {
+      return;
+    }
+
+    if (e.target !== refButton.current) {
+      setMenuOpen(false);
+    }
+
+  };
+
   useEffect(() => {
 
-  });
+    window.addEventListener('click', handler);
+
+    return () => {
+      window.addEventListener('click', handler);
+    }
+  })
 
   return (
     <>
@@ -17,6 +35,7 @@ export const MainMenu = ( { menuOpen, setMenuOpen } ) => {
         </Link>
 
         <button
+          ref={refButton}
           type="button"
           className={classNames('icon', 'icon__menu', {
             'icon__menu--close': menuOpen,
