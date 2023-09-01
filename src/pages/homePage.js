@@ -13,10 +13,6 @@ import { Link } from "react-router-dom";
 export const HomePage = () => {
   return (
     <>
-      {/*<MainMenu*/}
-      {/*  setMenuOpen={setMenuOpen}*/}
-      {/*  menuOpen={menuOpen}*/}
-      {/*/>*/}
       <header className="header header__main-page" id="home">
         <div className="header__bottom">
           <div className="header__content">
@@ -116,12 +112,9 @@ export const HomePage = () => {
              Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
               image={assessment}
             />
-
           </div>
         </section>
       </main>
-
-      {/*<Footer />*/}
     </>
   );
 };

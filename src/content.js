@@ -12,7 +12,14 @@ export const content = {
           url: '/contact',
         },
         img: '',
-      }
+      },
+      content: {
+        title: '',
+      },
+      showMap: false,
+      showContact: false,
+      showServices: false,
+      showContactInfo: false,
     },
 
   ],

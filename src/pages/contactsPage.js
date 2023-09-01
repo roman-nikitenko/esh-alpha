@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import { MapLeaflet } from '../components/mapLeaflet'
 
 export const ContactsPage = () => {
   return <>
@@ -104,13 +104,20 @@ export const ContactsPage = () => {
 
 
             </form>
-            <button type="submit" className="button button--dark_purple button--position">
+            <button
+              type="submit"
+              className="
+                button
+                button--dark_purple
+                button--position
+                button-space
+                "
+            >
               Send now
             </button>
+            <MapLeaflet />
           </div>
         </div>
-
-
       </div>
     </div>
   </>

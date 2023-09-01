@@ -201,7 +201,7 @@
     margin-bottom: 24px;
 
     @include onDesktop {
-      margin-bottom: 0;
+      margin-bottom: 48px;
     }
   }
 }
@@ -218,7 +218,11 @@
   @include onDesktop {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 44px;
+
+    justify-items: stretch;
+    align-items: stretch;
   }
 }
 
@@ -338,6 +342,7 @@
 
 .contact__page {
   padding-inline: 12px;
+  padding-block: 64px;
 
   @include onDesktop {
     padding-inline: 136px;
@@ -490,6 +495,8 @@
     height: 60px;
     align-items: center;
     gap: 10px;
+    padding-left: 10px;
+
     align-self: stretch;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.5);
@@ -533,28 +540,16 @@
   }
 }
 
+#map {
+  border: 1px solid rgba(173, 87, 197, 0.15);
+  width: 100%;
+  height: 600px;
+}
 
+.leaflet-container {
+  height: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.button-space {
+  margin-bottom: 36px;
+}
