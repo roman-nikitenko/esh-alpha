@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import { MapLeaflet } from '../components/mapLeaflet';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 import classNames from "classnames";
-import { Loader } from "../components/Loader";
+
 
 export const ContactsPage = () => {
   const [submitting, setSubmitting] = useState(false);
