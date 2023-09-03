@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/esh-alpha/static/css/main.c3c1d8c7.css",
+    "main.css": "/esh-alpha/static/css/main.64ec287c.css",
     "main.js": "/esh-alpha/static/js/main.bdf822a9.js",
     "static/media/main_mg_image_contacts.svg": "/esh-alpha/static/media/main_mg_image_contacts.f82b5591989690589551.svg",
     "static/media/contacts_bg.svg": "/esh-alpha/static/media/contacts_bg.b1066eade61f9e10bb5a.svg",
@@ -23,11 +23,11 @@
     "static/media/email.svg": "/esh-alpha/static/media/email.2fb75e24f7577f07e2fbf2f6eb30be49.svg",
     "static/media/assessment.svg": "/esh-alpha/static/media/assessment.6efc7aebe28b6ba0ef3024d96816b377.svg",
     "static/media/icon-burger.svg": "/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
-    "main.c3c1d8c7.css.map": "/esh-alpha/static/css/main.c3c1d8c7.css.map",
+    "main.64ec287c.css.map": "/esh-alpha/static/css/main.64ec287c.css.map",
     "main.bdf822a9.js.map": "/esh-alpha/static/js/main.bdf822a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3c1d8c7.css",
+    "static/css/main.64ec287c.css",
     "static/js/main.bdf822a9.js"
   ]
 }
