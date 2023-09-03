@@ -42,7 +42,7 @@ export const ServiceCard = () => {
 
         <button
           type="button"
-          className="button button--dark_purple"
+          className="btn btn--dark_purple"
         >
           Start
         </button>
