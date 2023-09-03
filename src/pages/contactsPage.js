@@ -1,8 +1,92 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
-import { MapLeaflet } from '../components/mapLeaflet'
+import { MapLeaflet } from '../components/mapLeaflet';
+import emailjs from '@emailjs/browser'
+import classNames from "classnames";
+import { Loader } from "../components/Loader";
 
 export const ContactsPage = () => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const [{
+    name,
+    email,
+    phone,
+    subject,
+    message
+  }, setValues] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
+  });
+
+  const [errors, setErrors] = useState({
+    name: false,
+    email: false,
+    phone: false,
+    subject: false,
+    message: false,
+  });
+
+
+  const handleChange = (event) => {
+    const { name: field, value } = event.target;
+
+    setValues(current => ({ ...current, [field]: value }));
+    setErrors(current => ({ ...current, [field]: false }));
+  };
+
+  const clearForm = () => {
+    setValues({
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    });
+
+    setErrors({
+      name: false,
+      email: false,
+      phone: false,
+      subject: false,
+      message: false,
+    });
+  };
+
+
+  const formRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSubmitting(true)
+
+    setErrors({
+      name: !name,
+      email: !email,
+      message: !message,
+      phone: !phone,
+      subject: !subject,
+    });
+
+    if (!name || !email || !message || !phone || !subject) {
+      setSubmitting(false);
+      return;
+    }
+
+    emailjs.sendForm('service_9b8hu7h', 'template_a9nz65p', formRef.current, 'FJ8XykqucxwlwNMeM')
+      .then(result => {
+        setSubmitting(false);
+      }, (error) => {
+        setSubmitting(false)
+        console.log(error.text);
+      });
+
+    clearForm();
+  };
+
   return <>
     <div className="contact__page">
       <div className="contact__block">
@@ -69,52 +153,81 @@ export const ContactsPage = () => {
               Love to hear <span className="contact__block__title--stong">from you,leave a</span>  message
             </h2>
 
-            <form className="form">
+            <form className="form" ref={formRef} onReset={clearForm} onSubmit={sendEmail}>
               <label className="form__lable" htmlFor="name">
                 Your Name
-                <input className="form__field" type="text" name="name" id="name"/>
+                <input
+                  className={classNames('form__field', { 'is-danger': errors.name })}
+                  type="text"
+                  name="name"
+                  id="name"
+                  value={name}
+                  onChange={handleChange}
+                />
               </label>
 
               <label className="form__lable" htmlFor="email">
                 Your email
-                <input className="form__field"  type="email" name="email" id="email" />
+                <input
+                  className={classNames('form__field', { 'is-danger': errors.email })}
+                  type="email"
+                  name="email"
+                  id="email"
+                  value={email}
+                  onChange={handleChange}
+                />
               </label>
 
               <label className="form__lable" htmlFor="phone">
                 Phone
-                <input className="form__field"  type="text" name="phone" id="phone" />
+                <input
+                  className={classNames('form__field', { 'is-danger': errors.phone })}
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  value={phone}
+                  onChange={handleChange}
+                />
               </label>
 
               <label className="form__lable" htmlFor="sunject">
                 Subject
-                <input className="form__field"  type="text" name="sunject" id="sunject" />
+                <input
+                  className={classNames('form__field', { 'is-danger': errors.subject })}
+                  type="text"
+                  name="subject"
+                  id="sunject"
+                  value={subject}
+                  onChange={handleChange}
+                />
               </label>
 
 
               <label className="form__lable grid-1-3" htmlFor="message">
                 Message
                 <textarea
-                  className="form__field__area"
+                  className={classNames('form__field__area', { 'is-danger': errors.message })}
                   name="message"
                   id="message"
                   rows={4}
                   cols={40}
+                  value={message}
+                  onChange={handleChange}
                 />
               </label>
 
-
             </form>
-            <button
-              type="submit"
-              className="
-                button
-                button--dark_purple
-                button--position
-                button-space
-                "
-            >
-              Send now
-            </button>
+
+                <button
+                  type="submit"
+                  onClick={sendEmail}
+                  className={classNames('button', 'btn', 'btn--dark_purple', 'btn--position', 'btn-space', {
+                    'is-loading' : submitting
+                  })}
+                >
+                  Send now
+                </button>
+
             <MapLeaflet />
           </div>
         </div>
@@ -122,3 +235,9 @@ export const ContactsPage = () => {
     </div>
   </>
 };
+
+// button
+// btn
+// btn--dark_purple
+// btn--position
+// btn-space

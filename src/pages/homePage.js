@@ -23,8 +23,8 @@ export const HomePage = () => {
           </span>
             <Link
               to="/contacts"
-              className="button button--header"
-              type="button"
+              className="btn btn--header"
+              type="btn"
             >
               Contact us
             </Link>
@@ -54,8 +54,8 @@ export const HomePage = () => {
             </span>
 
             <button
-              className="button button--color_about"
-              type="button"
+              className="btn btn--color_about"
+              type="btn"
             >
               Read more
             </button>

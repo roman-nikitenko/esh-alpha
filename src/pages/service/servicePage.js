@@ -61,8 +61,8 @@ export const ServicePage = () => {
           </div>
 
           <button
-            type="button"
-            className="button button--dark_purple"
+            type="btn"
+            className="btn btn--dark_purple"
           >
             Start
           </button>

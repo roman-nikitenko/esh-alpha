@@ -56,4 +56,12 @@ body {
   background-color: #fff;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 /*# sourceMappingURL=index.css.map */
