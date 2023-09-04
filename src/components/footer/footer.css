@@ -30,12 +30,15 @@
 }
 @media (min-width: 1440px) {
   .footer__top {
-    width: 360px;
+    min-width: 360px;
   }
 }
 .footer__title {
   display: flex;
   gap: 16px;
+}
+.footer__bottom {
+  width: 100%;
 }
 .footer__sign {
   color: #fff;

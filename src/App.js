@@ -7,6 +7,7 @@ import { MainMenu } from "./components/main-menu/Main-menu";
 import { Footer } from "./components/footer/Footer";
 import React, { useRef, useState } from "react";
 import { Menu } from "./components/menu-mobile/Menu";
+import content from './content';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +21,10 @@ function App() {
     />
     {menuOpen && <Menu refMenu={refMenu} />}
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<HomePage cardServices={content.cards} />} />
       <Route path="*" element={<HomePage /> } />
       <Route path="/contacts" element={<ContactsPage/>} />
-      <Route path="/service" element={<ServicePage/>} />
+      <Route path="/service" element={<ServicePage />} />
     </Routes>
     <Footer />
   </>

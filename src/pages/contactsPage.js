@@ -222,10 +222,12 @@ export const ContactsPage = () => {
                   type="submit"
                   onClick={sendEmail}
                   className={classNames('button', 'btn', 'btn--dark_purple', 'btn--position', 'btn-space', {
-                    'is-loading' : submitting
+                    'btn--loading' : submitting
                   })}
                 >
-                  Send now
+                  <span className={classNames({ 'btn-text--hidden': submitting })}>
+                    Send now
+                  </span>
                 </button>
 
             <MapLeaflet />
@@ -235,9 +237,3 @@ export const ContactsPage = () => {
     </div>
   </>
 };
-
-// button
-// btn
-// btn--dark_purple
-// btn--position
-// btn-space

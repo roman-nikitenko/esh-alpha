@@ -10,7 +10,9 @@ import account from "../components/cards/img/account.svg";
 import assessment from "../components/cards/img/assessment.svg";
 import { Link } from "react-router-dom";
 
-export const HomePage = () => {
+export const HomePage = ({ cardServices }) => {
+  console.log(cardServices)
+
   return (
     <>
       <header className="header header__main-page" id="home">
@@ -71,6 +73,14 @@ export const HomePage = () => {
             alt="service logo"
           />
           <div className="cards">
+            {cardServices.map(card => (
+              <Card
+                key={card.id}
+                title={card.title}
+                text={card.description}
+                image={card.img}
+              />
+            ))}
             <Card
               title="Lorem ipsum"
               text="
