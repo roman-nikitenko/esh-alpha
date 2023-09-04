@@ -6,8 +6,6 @@ import about__logo from "../img/about-ESH-alpha2.svg";
 import service__logo from "../img/service__logo.svg";
 import { Card } from "../components/cards/Card";
 import settings from "../components/cards/img/settings.svg";
-import account from "../components/cards/img/account.svg";
-import assessment from "../components/cards/img/assessment.svg";
 import { Link } from "react-router-dom";
 
 export const HomePage = ({ cardServices }) => {
@@ -78,50 +76,9 @@ export const HomePage = ({ cardServices }) => {
                 key={card.id}
                 title={card.title}
                 text={card.description}
-                image={card.img}
+                image={settings}
               />
             ))}
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={settings}
-            />
-
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={account}
-            />
-
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={assessment}
-            />
-
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={assessment}
-            />
-
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={assessment}
-            />
-
-            <Card
-              title="Lorem ipsum"
-              text="
-             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet."
-              image={assessment}
-            />
           </div>
         </section>
       </main>

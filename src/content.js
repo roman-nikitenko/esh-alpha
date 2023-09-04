@@ -132,7 +132,7 @@ const content = {
       id: 6,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: './img/account.svg',
+      img: '/assets/settings.svg',
     },
   ]
 }
