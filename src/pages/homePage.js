@@ -9,8 +9,6 @@ import settings from "../components/cards/img/settings.svg";
 import { Link } from "react-router-dom";
 
 export const HomePage = ({ cardServices }) => {
-  console.log(cardServices)
-
   return (
     <>
       <header className="header header__main-page" id="home">
