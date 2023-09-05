@@ -5,6 +5,7 @@ import footer__title from "../../img/footer__title.svg";
 import call from "../../img/phone.svg";
 import location from "../../img/location.svg";
 import email from "../../img/email.svg";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -12,9 +13,9 @@ export const Footer = () => {
       <div className="footer__wrapper">
         <div className="footer__top">
           <div className="footer__title">
-            <a href="#">
+            <Link to="/">
               <img src={footer__logo} alt="footer logo" />
-            </a>
+            </Link>
             <img src={footer__title}  alt="title footer"/>
           </div>
 
@@ -52,28 +53,28 @@ export const Footer = () => {
 
           <ul className="footer__service-list">
             <li className="list__item">
-              <a className="list__link" href="#">Lorem</a>
+              <Link className="list__link" to="#">Lorem</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Services</a>
+              <Link className="list__link" to="#">Services</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Facilisis</a>
+              <Link className="list__link" to="#">Facilisis</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Lorem</a>
+              <Link className="list__link" to="#">Lorem</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Services</a>
+              <Link className="list__link" to="#">Services</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Lorem</a>
+              <Link className="list__link" to="#">Lorem</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Lorem</a>
+              <Link className="list__link" to="#">Lorem</Link>
             </li>
             <li className="list__item">
-              <a className="list__link" href="#">Lorem</a>
+              <Link className="list__link" to="#">Lorem</Link>
             </li>
           </ul>
 

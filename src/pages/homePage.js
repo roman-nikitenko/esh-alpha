@@ -7,8 +7,9 @@ import service__logo from "../img/service__logo.svg";
 import { Card } from "../components/cards/Card";
 import settings from "../components/cards/img/settings.svg";
 import { Link } from "react-router-dom";
+import dataServices from '../content';
 
-export const HomePage = ({ cardServices }) => {
+export const HomePage = () => {
   return (
     <>
       <header className="header header__main-page" id="home">
@@ -69,7 +70,7 @@ export const HomePage = ({ cardServices }) => {
             alt="service logo"
           />
           <div className="cards">
-            {cardServices.map(card => (
+            {dataServices.cards.map(card => (
               <Card
                 key={card.id}
                 title={card.title}

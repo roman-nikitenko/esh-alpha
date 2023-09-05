@@ -26,6 +26,7 @@ const content = {
 
   services: [
     {
+      id: 1,
       mainTitle: 'Services',
       subTitle: 'For Business Solutions',
       description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
@@ -40,6 +41,7 @@ const content = {
       img2: require('./img/service_img_small.svg'),
     },
     {
+      id: 2,
       mainTitle: 'Services',
       subTitle: 'For Business Solutions',
       description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
@@ -54,6 +56,7 @@ const content = {
       img2: require('./img/service_img_small.svg'),
     },
     {
+      id: 3,
       mainTitle: 'Services',
       subTitle: 'For Business Solutions',
       description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
@@ -68,6 +71,7 @@ const content = {
       img2: require('./img/service_img_small.svg'),
     },
     {
+      id: 4,
       mainTitle: 'Services',
       subTitle: 'For Business Solutions',
       description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
@@ -82,6 +86,7 @@ const content = {
       img2: require('./img/service_img_small.svg'),
     },
     {
+      id: 5,
       mainTitle: 'Services',
       subTitle: 'For Business Solutions',
       description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +

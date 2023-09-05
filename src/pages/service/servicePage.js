@@ -28,11 +28,17 @@ export const ServicePage = () => {
     <main className="main">
 
       {content.services.map((serv, index) => {
-        const { mainTitle, subTitle, description} = serv;
+        const {
+          mainTitle,
+          subTitle,
+          description,
+          id,
+        } = serv;
 
         return (
           <ServiceCard
-            styleCard={index % 2 !== 0 ? true : false}
+            key={id}
+            styleCard={index % 2 !== 0}
             imgSmall={img__card1}
             imgBig={img__card2}
             title={mainTitle}
