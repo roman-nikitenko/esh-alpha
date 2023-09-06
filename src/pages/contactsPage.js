@@ -79,12 +79,11 @@ export const ContactsPage = () => {
     emailjs.sendForm('service_9b8hu7h', 'template_a9nz65p', formRef.current, 'FJ8XykqucxwlwNMeM')
       .then(result => {
         setSubmitting(false);
+        clearForm();
       }, (error) => {
         setSubmitting(false)
         console.log(error.text);
       });
-
-    clearForm();
   };
 
   return <>
@@ -164,6 +163,9 @@ export const ContactsPage = () => {
                   value={name}
                   onChange={handleChange}
                 />
+                {errors.name && (
+                  <p className="help">Name is required</p>
+                )}
               </label>
 
               <label className="form__lable" htmlFor="email">
@@ -176,6 +178,9 @@ export const ContactsPage = () => {
                   value={email}
                   onChange={handleChange}
                 />
+                {errors.email && (
+                  <p className="help">Email is required</p>
+                )}
               </label>
 
               <label className="form__lable" htmlFor="phone">
@@ -188,18 +193,24 @@ export const ContactsPage = () => {
                   value={phone}
                   onChange={handleChange}
                 />
+                {errors.phone && (
+                  <p className="help">Phone is required</p>
+                )}
               </label>
 
-              <label className="form__lable" htmlFor="sunject">
+              <label className="form__lable" htmlFor="subject">
                 Subject
                 <input
                   className={classNames('form__field', { 'is-danger': errors.subject })}
                   type="text"
                   name="subject"
-                  id="sunject"
+                  id="subject"
                   value={subject}
                   onChange={handleChange}
                 />
+                {errors.phone && (
+                  <p className="help">Subject is required</p>
+                )}
               </label>
 
 
@@ -214,6 +225,10 @@ export const ContactsPage = () => {
                   value={message}
                   onChange={handleChange}
                 />
+                {errors.message && (
+                  <p className="help help--position-area">Message is required</p>
+                )}
+
               </label>
 
             </form>

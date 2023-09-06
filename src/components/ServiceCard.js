@@ -17,7 +17,7 @@ export const ServiceCard = ({ imgSmall, imgBig, title, subTitle, description, st
           <img
             src={imgSmall}
             alt="small"
-            className={classNames(styleCard ? 'img--small--left' : 'img--small')}
+            className={classNames('img--small', styleCard ? 'img--small--left' : 'img--small')}
           />
         </div>
       </div>
