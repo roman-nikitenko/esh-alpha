@@ -107,7 +107,7 @@ const content = {
       id: 1,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: '../components/cards/img/settings.svg',
+      img: './img/settings.svg',
     },
     {
       id: 2,

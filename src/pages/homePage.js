@@ -5,7 +5,6 @@ import image__about2 from "../img/image__about2.png";
 import about__logo from "../img/about-ESH-alpha2.svg";
 import service__logo from "../img/service__logo.svg";
 import { Card } from "../components/cards/Card";
-import settings from "../components/cards/img/settings.svg";
 import { Link } from "react-router-dom";
 import dataServices from '../content';
 
@@ -75,7 +74,7 @@ export const HomePage = () => {
                 key={card.id}
                 title={card.title}
                 text={card.description}
-                image={settings}
+                image={card.img}
               />
             ))}
           </div>
