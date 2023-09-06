@@ -1,3 +1,5 @@
+import settings from './img/assessment.svg'
+
 const content = {
   pages: [
     {
@@ -107,37 +109,37 @@ const content = {
       id: 1,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: './img/settings.svg',
+      img: './esh-alpha/static/media/settings.233a57cdd04c7793ae45490c2712573b.svg',
     },
     {
       id: 2,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: require('./img/assessment.svg'),
+      img: './esh-alpha/static/media/account.4811f94e67eec06ba929ee65a40d26db.svg',
     },
     {
       id: 3,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: require('./img/account.svg'),
+      img: './esh-alpha/static/media/assessment.6efc7aebe28b6ba0ef3024d96816b377.svg',
     },
     {
       id: 4,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: require('./img/settings.svg'),
+      img: './esh-alpha/static/media/settings.233a57cdd04c7793ae45490c2712573b.svg',
     },
     {
       id: 5,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: require('./img/assessment.svg'),
+      img: './esh-alpha/static/media/account.4811f94e67eec06ba929ee65a40d26db.svg',
     },
     {
       id: 6,
       title: 'Lorem ipsum',
       description: 'Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.',
-      img: '/assets/settings.svg',
+      img: './esh-alpha/static/media/assessment.6efc7aebe28b6ba0ef3024d96816b377.svg',
     },
   ]
 }
