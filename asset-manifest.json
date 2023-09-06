@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/esh-alpha/static/css/main.e629a19c.css",
-    "main.js": "/esh-alpha/static/js/main.e4f4ed76.js",
+    "main.js": "/esh-alpha/static/js/main.f4a69897.js",
     "static/media/main_mg_image_contacts.svg": "/esh-alpha/static/media/main_mg_image_contacts.f82b5591989690589551.svg",
     "static/media/contacts_bg.svg": "/esh-alpha/static/media/contacts_bg.b1066eade61f9e10bb5a.svg",
     "static/media/service_img_big.svg": "/esh-alpha/static/media/service_img_big.42027d816e502d77fa3ebc1d95532159.svg",
@@ -15,19 +15,17 @@
     "static/media/about-ESH-alpha2.svg": "/esh-alpha/static/media/about-ESH-alpha2.792827631fb82d2ba2ec32761e3e6217.svg",
     "static/media/service__logo.svg": "/esh-alpha/static/media/service__logo.bbfbf7afdc5a71d3d6a7e9c6e525b744.svg",
     "static/media/footer__title.svg": "/esh-alpha/static/media/footer__title.cc1a2c3aa3b6cba52e4aa33188b17be2.svg",
-    "static/media/settings.svg": "/esh-alpha/static/media/settings.233a57cdd04c7793ae45490c2712573b.svg",
     "index.html": "/esh-alpha/index.html",
-    "static/media/account.svg": "/esh-alpha/static/media/account.4811f94e67eec06ba929ee65a40d26db.svg",
     "static/media/phone.svg": "/esh-alpha/static/media/phone.db808008f82bb5401a87c6385b953795.svg",
     "static/media/location.svg": "/esh-alpha/static/media/location.7ba1aaecaec54658ea202c1204e8786b.svg",
     "static/media/email.svg": "/esh-alpha/static/media/email.2fb75e24f7577f07e2fbf2f6eb30be49.svg",
     "static/media/assessment.svg": "/esh-alpha/static/media/assessment.6efc7aebe28b6ba0ef3024d96816b377.svg",
     "static/media/icon-burger.svg": "/esh-alpha/static/media/icon-burger.1722d53e4b8f67c0465e.svg",
     "main.e629a19c.css.map": "/esh-alpha/static/css/main.e629a19c.css.map",
-    "main.e4f4ed76.js.map": "/esh-alpha/static/js/main.e4f4ed76.js.map"
+    "main.f4a69897.js.map": "/esh-alpha/static/js/main.f4a69897.js.map"
   },
   "entrypoints": [
     "static/css/main.e629a19c.css",
-    "static/js/main.e4f4ed76.js"
+    "static/js/main.f4a69897.js"
   ]
 }
