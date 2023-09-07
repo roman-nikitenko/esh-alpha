@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 import { MapLeaflet } from '../components/mapLeaflet';
 import emailjs from '@emailjs/browser';
 import classNames from "classnames";
@@ -208,7 +210,7 @@ export const ContactsPage = () => {
                   value={subject}
                   onChange={handleChange}
                 />
-                {errors.phone && (
+                {errors.subject && (
                   <p className="help">Subject is required</p>
                 )}
               </label>
