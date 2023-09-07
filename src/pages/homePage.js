@@ -7,8 +7,19 @@ import service__logo from "../img/service__logo.svg";
 import { Card } from "../components/cards/Card";
 import { Link } from "react-router-dom";
 import dataServices from '../content';
+import settings from '../img/settings.svg'
+import assessment from '../img/assessment.svg'
+import account from '../img/account.svg'
 
 export const HomePage = () => {
+  const imgCard = [settings, assessment, account];
+
+  const randomImg = () => {
+    const randomNum = Math.trunc(Math.random() * 3);
+
+    return imgCard[randomNum];
+  }
+
   return (
     <>
       <header className="header header__main-page" id="home">
@@ -74,7 +85,7 @@ export const HomePage = () => {
                 key={card.id}
                 title={card.title}
                 text={card.description}
-                image={card.img}
+                image={randomImg()}
               />
             ))}
           </div>
