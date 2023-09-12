@@ -87,21 +87,21 @@ const content = {
       img1: require('./img/service_img_big.svg'),
       img2: require('./img/service_img_small.svg'),
     },
-    {
-      id: 5,
-      mainTitle: 'Services',
-      subTitle: 'For Business Solutions',
-      description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
-        '\n' +
-        '\n' +
-        'Cras egestas sit faucibus nunc et. Enim vitae egestas arcu bibendum auctor in sed eget. Vulputate etiam quis lacus congue. Dapibus sed lacinia id enim dui aliquam purus faucibus. Eu lorem id sit ornare odio dictum sed dignissim.',
-      button: {
-        label: 'start',
-        url: '',
-      },
-      img1: require('./img/service_img_big.svg'),
-      img2: require('./img/service_img_small.svg'),
-    },
+    // {
+    //   id: 5,
+    //   mainTitle: 'Services',
+    //   subTitle: 'For Business Solutions',
+    //   description: 'Lorem ipsum dolor sit amet consectetur. Fames tempor enim molestie rutrum tempus dui arcu. Eu ultrices ut est ut adipiscing lorem. Proin nisi sollicitudin erat diam felis euismod vehicula sit.\n' +
+    //     '\n' +
+    //     '\n' +
+    //     'Cras egestas sit faucibus nunc et. Enim vitae egestas arcu bibendum auctor in sed eget. Vulputate etiam quis lacus congue. Dapibus sed lacinia id enim dui aliquam purus faucibus. Eu lorem id sit ornare odio dictum sed dignissim.',
+    //   button: {
+    //     label: 'start',
+    //     url: '',
+    //   },
+    //   img1: require('./img/service_img_big.svg'),
+    //   img2: require('./img/service_img_small.svg'),
+    // },
   ],
 
   cards: [

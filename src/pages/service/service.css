@@ -25,6 +25,11 @@
   gap: 64px;
   padding: 64px 12px;
 }
+@media (min-width: 1024px) {
+  .main {
+    padding: 74px 75px;
+  }
+}
 @media (min-width: 1440px) {
   .main {
     padding: 80px 136px 176px;

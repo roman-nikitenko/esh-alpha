@@ -3,21 +3,21 @@
 
 .card {
   cursor: pointer;
-  max-width: 360px;
+  //min-width: 360px;
   color: $main-bg-color;
   gap: 16px;
   display: flex;
   flex-direction: row;
   padding: 32px 24px 48px;
   background-color: $main-bg-block;
-  box-shadow: 14px 15px $brand-color2;
+  box-shadow: 14px 15px $shadow-color;
   margin-right: 15px;
 
   transition: all 0.4s ease;
 
   @include onDesktop {
-    //margin-right: 0;
-    //margin-top: 48px;
+    min-width: 0;
+    max-width: 360px;
     margin-right: 0;
   }
 

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Link } from "react-router-dom";
 import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
 import { MapLeaflet } from '../components/mapLeaflet';
 import emailjs from '@emailjs/browser';
 import classNames from "classnames";
@@ -108,7 +107,6 @@ export const ContactsPage = () => {
                 Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.
               </p>
             </div>
-
             <div className="contact__block__contacts">
               <div className="mini__block">
                 <h3>Office</h3>
@@ -248,6 +246,7 @@ export const ContactsPage = () => {
                 </button>
 
             <MapLeaflet />
+
           </div>
         </div>
       </div>

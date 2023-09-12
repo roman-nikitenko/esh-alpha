@@ -25,7 +25,13 @@ export const HomePage = () => {
       <header className="header header__main-page" id="home">
         <div className="header__bottom">
           <div className="header__content">
-            <img className="header__welcome" src={welcome} alt="Welcome to ESH Aplha"/>
+            <div className="title title__space">
+              <h1>
+                <span className="title__normal">Welcome to</span>
+                <br/>
+                <span className="title__strong">ESH Alpha</span>
+              </h1>
+            </div>
             <span className="header__text">
             Lorem ipsum dolor sit amet consectetur. Facilisis auctor a diam cursus amet.
             Molestie metus morbi purus amet malesuada proin amet facilisis.

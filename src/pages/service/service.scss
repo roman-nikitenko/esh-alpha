@@ -31,6 +31,10 @@
   gap: 64px;
   padding: 64px 12px;
 
+  @include onTablet {
+    padding: 74px 75px;
+  }
+
   @include onDesktop {
     padding: 80px 136px 176px;
     gap: 176px;

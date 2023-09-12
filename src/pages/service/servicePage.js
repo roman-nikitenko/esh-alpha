@@ -8,7 +8,7 @@ import content from '../../content';
 
 export const ServicePage = () => {
   return <>
-    <header className="header header__service-page">
+    <header className="header header__service header__service-page">
       <div className="header__service__content">
         <div className="title">
           <h1>

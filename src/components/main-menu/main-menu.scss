@@ -8,6 +8,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @include onTablet {
+    padding: 16px 75px;
+  }
+
   @include onDesktop {
     padding: 16px 136px;
   }
@@ -16,7 +20,7 @@
     width: 34.76px;
     height: 28px;
 
-    @include onDesktop {
+    @include onTablet {
       width: 47px;
       height: 38px;
     }
@@ -31,7 +35,8 @@
   background-color: inherit;
   cursor: pointer;
 
-  @include onDesktop {
+
+  @include onTablet {
     display: none;
   }
 
@@ -49,19 +54,34 @@
   flex-direction: row;
   gap: 36px;
 
-  @include onDesktop {
+
+  @include onTablet {
     display: flex;
   }
 
   &__link {
+    position: relative;
     color: $main-bg-color;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
 
-    &:hover {
-      border-bottom: 1px solid $main-bg-color;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #FFFFFF;
+
+      transition: opacity 400ms;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
     }
   }
 }

@@ -1,6 +1,5 @@
 .card {
   cursor: pointer;
-  max-width: 360px;
   color: #fff;
   gap: 16px;
   display: flex;
@@ -13,6 +12,8 @@
 }
 @media (min-width: 1440px) {
   .card {
+    min-width: 0;
+    max-width: 360px;
     margin-right: 0;
   }
 }

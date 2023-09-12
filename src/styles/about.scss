@@ -1,0 +1,58 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+.content {
+  padding: 64px 12px;
+
+  @include onTablet {
+    padding: 20px 75px;
+  }
+
+  @include onDesktop {
+    padding: 80px 136px;
+  }
+}
+
+.content--last {
+  padding: 64px 12px 0;
+}
+
+.about {
+  @include onTablet {
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+  }
+
+  &__images {
+    position: relative;
+    margin-bottom: 98px;
+  }
+
+  &__describe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    &--space {
+      margin-bottom: 36px;
+
+      @include onDesktop {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

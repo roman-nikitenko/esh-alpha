@@ -19,7 +19,7 @@ export const MapLeaflet = () => {
     return () => {
       map.remove();
     }
-  });
+  }, []);
 
   return <>
     <div id="map"></div>
